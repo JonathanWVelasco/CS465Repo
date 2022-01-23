@@ -75,7 +75,7 @@ public class ClientHandler implements Runnable, MessageTypes{
         } catch (IOException e) {
 
             //e.printStackTrace();
-            System.out.print("User disconnected.");
+            System.out.println("User disconnected.");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
 

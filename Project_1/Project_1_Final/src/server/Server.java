@@ -49,9 +49,7 @@ public class Server {
 
     public static void main(String[] args) throws IOException{
 
-        InetAddress address = InetAddress.getByName("127.0.0.1");
-        ServerSocket serverSocket = new ServerSocket(1234, 100, address);
-        System.out.println(serverSocket.getInetAddress().toString().replace("/", ""));
+        ServerSocket serverSocket = new ServerSocket(1234);
         Server server = new Server(serverSocket);
         server.startServer();
 

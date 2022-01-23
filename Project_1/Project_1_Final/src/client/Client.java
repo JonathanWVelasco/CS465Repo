@@ -207,7 +207,9 @@ public class Client  implements MessageTypes{
     {
         try
         {
+
             this.socket = new Socket(serverIP, serverPort);
+
             this.objectWriter = new ObjectOutputStream((socket.getOutputStream()));
 
             this.objectReader = new ObjectInputStream(socket.getInputStream());
@@ -327,4 +329,3 @@ public class Client  implements MessageTypes{
 
 
 }
-
